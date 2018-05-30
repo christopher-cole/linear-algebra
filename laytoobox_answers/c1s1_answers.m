@@ -191,6 +191,7 @@ elseif ex == 34
     M19 = replace(M18, 1, 1, 3);
    
     echo off
+    M = M19;
     disp(M)
     disp('Variables 1-4 are equal to 20, 55/2, 30, 45/2 respectively')
     

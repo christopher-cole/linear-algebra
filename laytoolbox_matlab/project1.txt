@@ -1,5 +1,0 @@
-diary on
-x = {everything I type will be recorded}
-{Undefined function or variable 'everything'.
-} 
-diary off
