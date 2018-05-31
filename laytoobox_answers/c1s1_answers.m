@@ -194,7 +194,8 @@ elseif ex == 34
     M = M19;
     disp(M)
     disp('Variables 1-4 are equal to 20, 55/2, 30, 45/2 respectively')
-    
+else 
+   disp ('No solution for this exercise in Section 1.1.')   
 end
 
 %This file can be used in the same manner as C1s1.m, except instead of
