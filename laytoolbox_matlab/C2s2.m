@@ -1,6 +1,6 @@
 % data for Exercise Set 2.2
 
-ex = input('Exercise number (1-7, 29-33,35-42)? ');
+ex = input('Exercise number (1-7, 29-42)? ');
 
 if ex==1
    A = [8 6;5 4] 
