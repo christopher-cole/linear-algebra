@@ -1,10 +1,10 @@
 C3s1 %This calls the dataset which contains the matrices for some problems.
 %Make sure when prompted with "OK? y/n [y]:", to hit y and then enter (or just enter) if it's a correct
 %calculation, and no if it isn't.
-if (ex<=8 && ex>=1)
+if (ex==1 || ex==2 || ex==3 || ex==4 || ex==5 || ex==6 || ex==7 || ex==8)
    X = ['Cofactor expansion along first row: ', num2str(A(1)), ' * det(', mat2str(A([2 3],[2 3])), ') + ',num2str(-A(4)) ' * det(', mat2str(A([2 3], [1 3])) , ') + ',num2str(A(7)) ' * det(', mat2str(A([2 3], [1 2])), ') = ', num2str(det(A))];
    disp(X)
-   if (ex>=1 && ex<=4)
+   if (ex==1 || ex==2 || ex==3 || ex==4)
       Y = ['Cofactor expansion along second column: ', num2str(-A(4)), ' * det(', mat2str(A([2 3],[1 3])), ') + ',num2str(A(5)) ' * det(', mat2str(A([1 3], [1 3])) , ') + ',num2str(-A(6)) ' * det(', mat2str(A([1 2], [1 3])), ') = ', num2str(det(A))];
       disp(Y)
    end
@@ -26,7 +26,7 @@ elseif ex==13
 elseif ex==14
    X = ['Cofactor expansion along fourth row: ', num2str(-A(4)), ' * ', mat2str(A([1:3 5], [2:5])), ', which equals ', num2str(-A(4)*-A(23)), ' * ', mat2str(A([1 2 5],[2:4])),', which equals ', num2str(-A(4)*-A(23)*A(6)), ' * ', mat2str(A([2 5] , [3 4])), ' + ', num2str(-A(4)*-A(23)*A(10)), ' * ', mat2str(A([1 2],[3 4])), ', which equals ', num2str(det(A))];
    disp(X)
-elseif (ex>=15 && ex <= 18)
+elseif (ex==15 || ex==16 || ex==17 || ex==18)
    X = ['The determinant equals ', ' - ', num2str(A(3)), ' * ',num2str(A(5)), ' * ',num2str(A(7)), ' - ',num2str(A(6)), ' * ',num2str(A(8)), ' * ',num2str(A(1)), ' - ',num2str(A(9)), ' * ',num2str(A(2)), ' * ',num2str(A(4)), ' + ', num2str(A(1)), ' * ',num2str(A(5)), ' * ',num2str(A(9)), ' + ',num2str(A(4)), ' * ',num2str(A(8)), ' * ',num2str(A(3)), ' + ',num2str(A(7)), ' * ',num2str(A(2)), ' * ',num2str(A(6)), ', which equals ', num2str(det(A))];
    disp(X)
 elseif ex==37
